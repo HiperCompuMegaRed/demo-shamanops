@@ -18,9 +18,9 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'jose.abzum@escala24x7.com'
+      shamanopsBusinessApprovers: 'sarasa@sarasa.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com, rocajp@gmail.com'
-      shamanopsBusinessApproversMinimalProd: '1'
+      shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
