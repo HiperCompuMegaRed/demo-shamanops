@@ -22,6 +22,8 @@ jobs:
       shamanopsTechnicalApprovers: 'ausberto.medina@rsg.com.co, alfonso.palacio@kappa.com.pa, wilderman.gallego@rsg.com.co'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+    # Deployment Strategy
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
