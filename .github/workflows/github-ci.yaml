@@ -19,7 +19,7 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'bethzon.schntzlet@rsg.com.co'
+      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
