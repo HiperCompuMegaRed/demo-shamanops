@@ -18,8 +18,8 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'marcelo@syrex.com.ar,alejandro@syrex.com.ar'
-      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
+      shamanopsBusinessApprovers: 'jroca@shamanops.com'
+      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
 #-------------------------------------------------------------------------------------------------#
