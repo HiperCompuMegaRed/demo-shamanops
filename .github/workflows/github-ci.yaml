@@ -22,6 +22,10 @@ jobs:
       shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+    # Deployment Strategy
+      # By default the deploys will use the rolling strategy
+      # To use Canary strategy in your enviroments set this to 'true'
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
