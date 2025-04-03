@@ -19,9 +19,11 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
+      shamanopsTechnicalApprovers: 'rocajp@gmail.com, oscar.mullin@mercadolibre.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+    # Deployment Strategy
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
