@@ -20,6 +20,8 @@ jobs:
     # Approvals
       shamanopsApprovalsProd: 'false'
       security_check_enabled: 'false'
+    # CI Metrics forward
+      forward_metrics_enabled: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
