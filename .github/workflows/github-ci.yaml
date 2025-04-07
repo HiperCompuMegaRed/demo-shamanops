@@ -22,6 +22,8 @@ jobs:
       security_check_enabled: 'false'
     # CI Metrics forward
       forward_metrics_enabled: 'true'
+    # Log level
+      log_level: 'debug'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
