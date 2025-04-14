@@ -8,7 +8,7 @@ on:
     branches: [ "main" ]
 jobs:
   shamanops:
-    uses: shamanops/resources/.github/workflows/base-stable.yaml@main
+    uses: shamanops/resources/.github/workflows/base-rc.yaml@main
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
@@ -17,13 +17,18 @@ jobs:
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
+    # SAST check
+      code_quality_check_enabled: 'true'
+    # SCA check
+      security_check_enabled: 'true'
     # Approvals
-      shamanopsApprovalsProd: 'false'
-      security_check_enabled: 'false'
-    # CI Metrics forward
-      forward_metrics_enabled: 'true'
-    # Log level
-    #  log_level: 'debug'
+      # Business and Technical approvers
+      shamanopsBusinessApprovers: 'jroca@shamanops.com'
+      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
+      shamanopsApprovalsProd: 'true'
+      shamanopsBusinessApproversMinimalProd: '1'
+      shamanopsTechnicalApproversMinimalProd: '1'
+
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
@@ -36,5 +41,6 @@ jobs:
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
       shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
+      shamanops_code_quality_token: ${{ secrets.shamanops_code_quality_token }}
 ##################################################################################################
 ##################################################################################################
