@@ -34,6 +34,7 @@ jobs:
       shamanops_manifest_repository_token: ${{ secrets.shamanops_manifest_repository_token }}
       shamanops_chat_webhook: ${{ secrets.shamanops_chat_webhook }}
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
+      shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
 ##################################################################################################
 ##################################################################################################
