@@ -22,6 +22,7 @@ jobs:
       shamanopsTechnicalApprovers: 'rodrigo.bustos@mercadolibre.com, javier.cardoso@mercadolibre.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
