@@ -17,7 +17,14 @@ jobs:
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
+    # SCA check
+      security_check_enabled: 'false'
+    # Repository Metrics
+      repository_metrics_enabled: 'false'
     # Approvals
+      shamanopsApprovalsDev: 'false'
+      shamanopsApprovalsStg: 'false'
+      shamanopsApprovalsProd: 'false'
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
