@@ -36,5 +36,6 @@ jobs:
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
       shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
+      shamanops_code_quality_token: ${{ secrets.shamanops_code_quality_token }}
 ##################################################################################################
 ##################################################################################################
