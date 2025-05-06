@@ -23,10 +23,6 @@ jobs:
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
       multiclusterTag: 'main, violet, pink, green'
-    # Enable Dynamics Enviroments
-      shamanopsDynamicEnvsEnabled: 'true'
-    # Dynamics Enviroments list
-      shamanopsDynamicEnvs: 'qa, audit'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
