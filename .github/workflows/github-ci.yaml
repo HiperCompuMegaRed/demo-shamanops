@@ -22,7 +22,8 @@ jobs:
       shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      #multiclusterTag: 'main, violet, pink, green'
+ # Multicluster
+      multiclusterTag: "main, gke"
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
