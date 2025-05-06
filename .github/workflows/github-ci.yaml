@@ -8,7 +8,7 @@ on:
     branches: [ "main" ]
 jobs:
   shamanops:
-    uses: shamanops/resources/.github/workflows/base-rc.yaml@main
+    uses: shamanops/resources/.github/workflows/base-stable.yaml@main
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
@@ -22,7 +22,7 @@ jobs:
       shamanopsTechnicalApprovers: 'rocajp@gmail.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      multiclusterTag: 'main, violet, pink, green'
+      #multiclusterTag: 'main, violet, pink, green'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
