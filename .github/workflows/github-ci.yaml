@@ -22,6 +22,7 @@ jobs:
       shamanopsTechnicalApprovers: 'rocajp@gmail.com'
  # Multicluster
       multiclusterTag: "main, gke"
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
