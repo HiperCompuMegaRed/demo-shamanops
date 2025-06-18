@@ -21,7 +21,7 @@ jobs:
       shamanopsBusinessApprovers: 'rocajp@gmail.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
     # Log level
-      log_level: 'debug'
+      #log_level: 'debug'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
