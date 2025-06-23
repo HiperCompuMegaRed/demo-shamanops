@@ -20,6 +20,8 @@ jobs:
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'elbarrios@cfotechlatam.com, rocajp@gmail.com'
+    # Deployment Strategy
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
