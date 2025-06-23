@@ -19,7 +19,8 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'fernando.jambrina@vr4it.com'
+      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
+      log_level: 'debug'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
