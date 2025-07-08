@@ -18,8 +18,9 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'elbarrios@cfotechlatam.com, rocajp@gmail.com'
+      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
+      shamanopsBusinessApproversMinimalProd: '0'
+      shamanopsTechnicalApproversMinimalProd: '0'
     # Deployment Strategy
       strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
