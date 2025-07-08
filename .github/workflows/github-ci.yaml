@@ -18,8 +18,9 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
+      shamanopsBusinessApprovers: 'lifschitzflorencia@gmail.com'
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
-      shamanopsBusinessApproversMinimalProd: '0'
+      shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
     # Deployment Strategy
       strategyCanaryProd: 'true'
