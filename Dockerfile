@@ -1,4 +1,4 @@
-FROM docker.io/library/ASDgolang:1.16 as build
+FROM docker.io/library/golang:1.16 as build
 WORKDIR /go/src/app
 COPY . .
 RUN make
