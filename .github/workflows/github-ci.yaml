@@ -19,7 +19,10 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsBusinessApprovers: 'flifschitz@shamanops.com'
-      shamanopsTechnicalApprovers: 'jurriste@trans.com.ar'
+      shamanopsTechnicalApprovers: 'jroca@shamanops.com'
+    # SCA check
+      security_check_enabled: 'true'
+      security_check_blocker: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
