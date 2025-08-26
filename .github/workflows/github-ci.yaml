@@ -25,7 +25,7 @@ jobs:
       # To use Canary strategy in your enviroments set this to 'true'
       strategyCanaryDev: 'false'
       strategyCanaryStg: 'false'
-      strategyCanaryProd: 'true
+      strategyCanaryProd: 'true'
       # To use BlueGreen strategy in your enviroments set this to 'true'
       strategyBlueGreenDev: 'false'
       strategyBlueGreenStg: 'false'
