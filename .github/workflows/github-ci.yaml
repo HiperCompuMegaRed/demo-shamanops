@@ -36,6 +36,7 @@ jobs:
       stress_check_blocker: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
+      shamanops_code_quality_token: ${{ secrets.shamanops_code_quality_token }}
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
       shamanops_argocd_dev_token: ${{ secrets.shamanops_argocd_dev_token }}
       shamanops_argocd_stg_token: ${{ secrets.shamanops_argocd_stg_token }}
