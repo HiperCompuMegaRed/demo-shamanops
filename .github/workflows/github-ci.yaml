@@ -20,6 +20,8 @@ jobs:
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'alejandro.romero@claropay.com, vladimir.aguirre@claropay.com'
+    # Deployment Strategy
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
