@@ -20,6 +20,12 @@ jobs:
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'wallys.morales@brubank.com'
+    # Deployment Strategy
+      # By default the deploys will use the rolling strategy
+      # To use Canary strategy in your enviroments set this to 'true'
+      strategyCanaryDev: 'false'
+      strategyCanaryStg: 'false'
+      strategyCanaryProd: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
