@@ -1,0 +1,36 @@
+###################################################################################################
+############################# ShamanOps pipeline | GitHub Actions #################################
+###################################################################################################
+name: ShamanOps
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+jobs:
+  shamanops:
+    uses: shamanops/resources/.github/workflows/base-stable.yaml@main
+    with:
+    # Environments:
+    # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
+      environments: 'minimal'
+    # Project
+      projectName: 'examples'
+#-------------------------------------------------------------------------------------------------#
+## Features  -------------------------------------------------------------------------------------#
+    # Approvals
+      shamanopsBusinessApprovers: 'jroca@shamanops.com'
+      shamanopsTechnicalApprovers: 'wallys.morales@brubank.com'
+#-------------------------------------------------------------------------------------------------#
+    secrets:
+      shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
+      shamanops_argocd_dev_token: ${{ secrets.shamanops_argocd_dev_token }}
+      shamanops_argocd_stg_token: ${{ secrets.shamanops_argocd_stg_token }}
+      shamanops_argocd_prod_token: ${{ secrets.shamanops_argocd_prod_token }}
+      shamanops_argocd_drp_token: ${{ secrets.shamanops_argocd_drp_token }}
+      shamanops_manifest_repository_token: ${{ secrets.shamanops_manifest_repository_token }}
+      shamanops_chat_webhook: ${{ secrets.shamanops_chat_webhook }}
+      shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
+      shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
+      shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
+##################################################################################################
+##################################################################################################
